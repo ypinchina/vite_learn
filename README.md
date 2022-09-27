@@ -49,3 +49,12 @@
 ## vite构建vue项目
 * 1.0版本的vite,以vue3为主
 * 2.0版本，跨框架
+
+
+## vite 天生支持原生css
+
+* 支持css-variable的使用
+
+* 支持 css module
+
+* 支持 css预编译 (sass , less , stylus)
