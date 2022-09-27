@@ -55,6 +55,11 @@
 
 * 支持css-variable的使用
 
+* 支持css alias 地址映射 
+
 * 支持 css module
 
-* 支持 css预编译 (sass , less , stylus)
+* 支持 css预编译 (sass , less , stylus)， vite天生支持预编译，只需要安装对应的预编译插件，并使用即可
+
+## vite使用 typescript
+
