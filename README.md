@@ -47,7 +47,9 @@
 
 
 ## vite构建vue项目
+
 * 1.0版本的vite,以vue3为主
+
 * 2.0版本，跨框架
 
 
@@ -62,4 +64,16 @@
 * 支持 css预编译 (sass , less , stylus)， vite天生支持预编译，只需要安装对应的预编译插件，并使用即可
 
 ## vite使用 typescript
+
+* vite 使用的是esbuild，所以天生支持 ts 语法，但是vite只是对ts编译，不做校验
+
+* 加上 tsc --noEmit 命令即可对ts文件进行校验
+
+* 对于vue文件的ts校验 需要使用vue-tsc命令 以及安装该插件进行校验
+
+* isolatedModules的使用
+
+* client types的使用
+
+## 静态文件处理
 
