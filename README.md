@@ -107,3 +107,11 @@ vite中可以很方便地引入 web assembly文件
 
 
 ## 环境变量
+
+### vite通过 import.meta.env 引入环境变量
+
+### vite中有四种环境变量
+* MODE（指名现在处于的环境）
+* BASE_URL （基础路径）
+* PROD （线上生产环境）
+* DEV (开发环境)
