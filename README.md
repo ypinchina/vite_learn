@@ -75,5 +75,35 @@
 
 * client types的使用
 
-## 静态文件处理
+## 静态资源处理
 
+### types
+
+vite中提供给import 三种 东西方便用户引入
+
+* url (路径)
+
+* raw (转字符串)
+
+* worker / worker inline （与web worker相关）
+
+
+### vite中import JSON
+
+
+### web assembly
+
+WASM不是一种编程语言🙂。简而言之，它是一种将用一种编程语言编写的代码转换为浏览器可理解的机器代码的技术。
+
+WASM (WebAssembly的缩写)被设计为其他语言的编译目标，允许服务器端代码(如C或C++代码)被编译成WASM并在浏览器中执行。
+
+
+vite中可以很方便地引入 web assembly文件
+
+
+## vite中集成eslint 和 pritter （eslint用于规范带代码书写习惯，pritter用于自动格式化）
+
+安装husky可以保证在git提交推送之前执行eslint规则校验，亦可执行单元测试测脚本命令
+
+
+## 环境变量
