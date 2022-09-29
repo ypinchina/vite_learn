@@ -115,3 +115,12 @@ vite中可以很方便地引入 web assembly文件
 * BASE_URL （基础路径）
 * PROD （线上生产环境）
 * DEV (开发环境)
+
+
+**注意** import.meta.env这个对象只存在于dev环境中，生产环境中则没有这个对象，build命令可见
+
+
+### vite 中也可以在根页面新增.env文件，从而新增环境变量
+
+
+### 通过mode来指定新的环境变量文件
