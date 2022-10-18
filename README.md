@@ -131,3 +131,25 @@ vite中可以很方便地引入 web assembly文件
 ## vite热更新
 
 ### 开启热更新，不同框架有不同的方式 (使用websocket 来热更新客户端代码，热更新不会刷新页面)  HMR ，api
+
+## glob import 
+
+通过 import.meta.glob 引入多文件，常用于多语言配置，是来自第三方库 fast-glob来实现的
+
+## vite 性能揭秘 -- 预编译优化
+ 
+* 预编译： 会在vite启动之前，在node_module文件夹下生成.vite 缓存文件夹，里面有第三方的依赖，以后使用这些第三方都可以在cache里取
+
+预编译过程有个重要的操作是把非es_module的文件转化为es_module
+
+比如vite在开发时，使用的第三方库是react,react源码是使用commonJS的引入方式，与vite的ES_module方式不同，所以会转化为vite所理解的方式。
+
+* 将多文件打包成一整个模块，提高性能
+
+比如vite中引入lodash.js里面的工具函数文件有上百个，使用vite编译能打包成一整个文件，减少浏览器的请求次数。
+
+但是如果不使用vite进行编译，那么浏览器将加载完上百个工具函数的文件，会严重卡顿。
+
+* 资源文件得缓存策略
+
+vite默认对main.js不缓存，对第三方长时间不会修改文件默认开启文件缓存
