@@ -52,6 +52,9 @@
 
 * 2.0版本，跨框架
 
+## vite构建react项目
+
+vite天生支持react
 
 ## vite 天生支持原生css
 
