@@ -1,0 +1,3 @@
+modulde.export = {
+  extends: 'standard',
+}
